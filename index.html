@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" onblur="message()" id="lastname"/>
+  </form>
+  <script type="text/javascript">
+function message(){
+  var regexText = /^[a-zA-Z-]+$/;
+  var lastname = document.getElementById('lastname').value;
+  if(regexText.test(lastname)==true){
+    alert('Merci de votre participation');
+  }else{
+    alert('Veuillez ne rentrer que des lettres');
+  }
+}
+  </script>
+</body>
+</html>
